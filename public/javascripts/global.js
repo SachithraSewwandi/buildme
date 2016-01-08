@@ -69,6 +69,8 @@ function showUserInfo(event) {
 
 };
 
+
+
 // Add User
 function addUser(event) {
     event.preventDefault();
@@ -124,6 +126,9 @@ function addUser(event) {
         return false;
     }
 };
+
+
+
 
 // Delete User
 function deleteUser(event) {

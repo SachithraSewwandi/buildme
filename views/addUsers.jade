@@ -1,0 +1,68 @@
+//
+   Created by hsenid on 1/8/16.
+
+extends layout
+block content
+   .container.jumbotron(ng-controller="addUserController")
+      h2.text-center Add User
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Name of the Company:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.name")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 1:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.add1")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 2:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.add2")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 3:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.add3")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Tel:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.tel")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label email:
+         .col-md-3
+            input.form-control.text-left(type="email",ng-model="form.email")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label User Name:
+         .col-md-3
+            input.form-control.text-left(type="text",ng-model="form.username")
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Password:
+         .col-md-3
+            input.form-control.text-left(type="password",ng-model="form.password")
+      br
+      .row
+         .col-md-3
+         .col-md-3
+         .col-md-3
+            button.btn.right(type="submit" ng-click="save(form)") Submit

@@ -1,0 +1,41 @@
+//
+   Created by hsenid on 1/8/16.
+extends layout
+block content
+   .container.jumbotron(ng-controller="viewController")
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Name of the Company:
+         .col-md-3
+            p {{names}}
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 1:
+         .col-md-3
+            p {{add1}}
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 2:
+         .col-md-3
+            p {{add2}}
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label Address 3:
+         .col-md-3
+            p {{add3}}
+
+      br
+      .row
+         .col-md-3
+         .col-md-3.text-right
+            label email:
+         .col-md-3
+            p {{mail}}
+
